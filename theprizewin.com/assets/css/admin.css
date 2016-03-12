@@ -1,0 +1,12 @@
+#admin-login {width:355px; margin:0 auto;}
+#admin-login h1 { text-align: center; word-break: break-all;}
+#admin-login form {  border: 1px solid #cccccc; border-radius: 10px; margin-top: 20px; padding: 27px; width: 350px;}
+#admin-login form input {width:236px; height:28px; border:1px solid #cccccc; padding-left:10px;}
+#admin-login form .submit {color:#FFF; font-size:16px; background-color:#2ac6e5; text-decoration:none; border-radius:5px 5px 5px 5px; -moz-border-radius:5px 5px 5px 5px; -webkit-border-radius:5px 5px 5px 5px; width:100px; float:left; margin-top:20px; cursor:pointer; border:0; float:none; }
+.edit-image {width:100px; height:100px;}
+
+@media screen and (max-width: 767px) {
+#admin-login {width:100%; max-width:355px; min-width:150px;}
+#admin-login form {width:100%;}
+#admin-login form input {width:100%;}
+}

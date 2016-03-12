@@ -1,0 +1,26 @@
+@font-face { font-family: FontAwesome; src:url('fonts/FontAwesome.otf'), url('fonts/FontAwesome.ttf'); }
+body, ul { margin:0; padding:0; }
+body { background-color:#e0e0e0; font-family:Arial, Helvetica, sans-serif; }
+#b-line { background-color:#252525; background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.35, #272727), color-stop(1, #1B1B1B) ); background-image: -o-linear-gradient(bottom, #272727 35%, #1B1B1B 100%); background-image: -moz-linear-gradient(bottom, #272727 35%, #1B1B1B 100%); background-image: -webkit-linear-gradient(bottom, #272727 35%, #1B1B1B 100%); background-image: -ms-linear-gradient(bottom, #272727 35%, #1B1B1B 100%); background-image: linear-gradient(to bottom, #272727 35%, #1B1B1B 100%); height:25px; }
+header { margin:0 auto; margin-top:20px; width:1200px; height:50px; background-color:#dadada; background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0.06, #FFFFFF), color-stop(1, #DADADA) ); background-image: -o-linear-gradient(bottom, #FFFFFF 6%, #DADADA 100%); background-image: -moz-linear-gradient(bottom, #FFFFFF 6%, #DADADA 100%); background-image: -webkit-linear-gradient(bottom, #FFFFFF 6%, #DADADA 100%); background-image: -ms-linear-gradient(bottom, #FFFFFF 6%, #DADADA 100%); background-image: linear-gradient(to bottom, #FFFFFF 6%, #DADADA 100%); border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; border-right:1px solid #b7b7b7; border-bottom:1px solid #bebebf; border-left:1px solid #efefef; border-top:1px solid #f5f5f5; }
+#logodiv { margin:0 auto; margin-top:20px; width:1200px; }
+#logodiv img { margin-left:10px; }
+header ul { float:left; margin-top:15px; }
+header ul li { display:inline; margin-left:10px; }
+header ul li a { text-decoration:none; color:#727272; padding:5px 10px; }
+header ul li a:hover { background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #868686), color-stop(1, #B1B1B1) ); background-image: -o-linear-gradient(bottom, #868686 0%, #B1B1B1 100%); background-image: -moz-linear-gradient(bottom, #868686 0%, #B1B1B1 100%); background-image: -webkit-linear-gradient(bottom, #868686 0%, #B1B1B1 100%); background-image: -ms-linear-gradient(bottom, #868686 0%, #B1B1B1 100%); background-image: linear-gradient(to bottom, #868686 0%, #B1B1B1 100%); border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; padding:5px 10px; color:#fff; }
+header form { float:right; margin-top:10px; margin-right:20px; }
+#text { border-radius:15px 0 0 15px; -moz-border-radius:15px 0 0 15px; -webkit-border-radius:15px 0 0 15px; border:1px solid #ededed; border-right:none; height:25px !important; width:300px !important; padding-left: 10px; float:left; }
+#submit { border-radius:0 15px 15px 0; -moz-border-radius:0 15px 15px 0; -webkit-border-radius:0 15px 15px 0; border:1px solid #ededed; background-color:#fff; border-left:none; height:29px !important; float:right; font-family:FontAwesome; width:auto !important; }
+#slider { width:1200px; height:300px; margin:0 auto; -webkit-box-shadow: 1px 9px 12px 0px rgba(50, 50, 50, 0.47); -moz-box-shadow: 1px 9px 12px 0px rgba(50, 50, 50, 0.47); box-shadow: 1px 9px 12px 0px rgba(50, 50, 50, 0.47); }
+#content { width:1180px; margin:0 auto; margin-top:40px; margin-bottom:40px; background-color:#fff; border:2px solid #c8c8c8; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; padding:10px; }
+#left-side { float:left; width:310px; }
+#c-left2 { margin-top:0; height:450px; border:1px solid #e0dfdd; padding:10px; background-color:#f3f2ed; background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #F5F5F5), color-stop(1, #E4E4E4) ); background-image: -o-linear-gradient(bottom, #F5F5F5 0%, #E4E4E4 100%); background-image: -moz-linear-gradient(bottom, #F5F5F5 0%, #E4E4E4 100%); background-image: -webkit-linear-gradient(bottom, #F5F5F5 0%, #E4E4E4 100%); background-image: -ms-linear-gradient(bottom, #F5F5F5 0%, #E4E4E4 100%); background-image: linear-gradient(to bottom, #F5F5F5 0%, #E4E4E4 100%); }
+#results, #search { background-color: #f3f2ed; border-radius: 5px; font-size: 13px; padding-top: 10px; }
+#results { padding:10px;}
+#h2-results { background-color: #f3f2ed; border-radius: 5px; margin: 0 0 20px; padding: 10px 0 10px 490px; }
+#search form { margin-left:260px; }
+#search select, input { width:170px; height:30px; }
+#c-left2 select, input {width:120px !important; height:25px !important;}
+.features,badges-list { list-style:none; padding:0; margin:0;}
+ 

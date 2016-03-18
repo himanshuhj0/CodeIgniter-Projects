@@ -12,9 +12,9 @@ class Home extends MY_Controller {
     public function index() {
         $data = array();
         $head = array();
-        $head['title'] = 'Тийм билдинг - Организиране на най-атрактивните фирмени събития‎';
-        $head['description'] = 'Най-интересните и разнообразни фирмени събития организирани от Подобри себе си!';
-        $head['keywords'] = 'тийм билдинг, организация, фирми, фирмени събития';
+        $head['title'] = 'Title information‎';
+        $head['description'] = 'Description info';
+        $head['keywords'] = 'key,words,for,seo';
         $data['articles'] = $this->Home_model->getHomeArticles();
         $this->render('home', $head, $data);
     }

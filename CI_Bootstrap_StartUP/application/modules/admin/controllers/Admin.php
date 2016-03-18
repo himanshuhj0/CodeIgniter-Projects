@@ -39,4 +39,9 @@ class Admin extends MX_Controller {
         $this->load->view('_parts/footer');
     }
 
+    public function logout() {
+        $this->session->sess_destroy();
+        redirect('admin');
+    }
+
 }

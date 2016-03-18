@@ -17,3 +17,33 @@
     <body>
         <div id="wrapper">
             <div id="content">
+                <div clas="container">
+                    <?php if($this->session->userdata('logged_in')) { ?>
+                        <nav class="navbar">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" id="brand" href="#">Administration</a>
+                            </div>
+                            <div id="navbar" class="collapse navbar-collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="<?= base_url('admin/logout') ?>">Logout</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <div class="col-sm-3 col-md-2 left-side">
+                            <ul class="sidebar-menu">
+                                <li class="header">MAIN NAVIGATION</li>
+                                <li><a href="">Publish</a></li>
+                            </ul>
+                        </div>
+                    <?php } ?>

@@ -1,0 +1,12 @@
+html, body { height: 100%;}
+body { font-family:arial;}
+
+#wrapper { min-height: 100%; position: relative;}
+#content {padding-bottom:100px;}
+
+.well.login-box {    width:300px;    margin:0 auto;}
+.well.login-box legend {  font-size:26px;  text-align:center;  font-weight:300;}
+.well.login-box label {  font-weight:300;  font-size:16px;  }
+.well.login-box input[type="text"] {  box-shadow:none;  border-color:#ddd;  border-radius:0;}
+
+.login-alerts {max-width: 300px; margin:0 auto;}

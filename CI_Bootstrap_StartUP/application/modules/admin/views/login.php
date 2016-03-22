@@ -28,16 +28,16 @@
                 <form action = "" method = "POST">
                     <legend>Login</legend>
                     <div class = "form-group">
-                        <label for = "username">Username</label>
-                        <input value = '' id = "username" placeholder = "Username" name = "username" type = "text" class = "form-control" />
+                        <label for="username">Username</label>
+                        <input value="" id="username" placeholder="Username" name="username" type="text" class="form-control" />
                     </div>
                     <div class = "form-group">
-                        <label for = "password">Password</label>
-                        <input id = "password" value = '' placeholder = "Password" name = "password" type = "text" class = "form-control" />
+                        <label for="password">Password</label>
+                        <input id="password" value="" placeholder="Password" name="password" type="text" class="form-control" />
                     </div>
                     <div class = "form-group text-center">
-                        <button class = "btn btn-danger btn-cancel-action">Cancel</button>
-                        <input type = "submit" class = "btn btn-success btn-login-submit" value = "Login" />
+                        <a href="<?= base_url() ?>" class="btn btn-danger btn-cancel-action">Cancel</a>
+                        <input type="submit" class="btn btn-success btn-login-submit" value="Login" />
                     </div>
                 </form>
             </div>

@@ -13,6 +13,13 @@ CREATE TABLE IF NOT EXISTS `articles` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
+CREATE TABLE IF NOT EXISTS `history` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `activity` varchar(255) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `time` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,

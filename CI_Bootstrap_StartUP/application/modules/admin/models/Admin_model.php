@@ -18,11 +18,11 @@ class Admin_model extends CI_Model {
     }
 
     public function articlesCount($search = null, $category = null) {
-        if($search !== null) {
+        if ($search !== null) {
             $search = $this->db->escape_like_str($search);
             $this->db->where("(title LIKE '%$search%' OR description LIKE '%$search%')");
         }
-        if($category !== null) {
+        if ($category !== null) {
             $this->db->where('category', $category);
         }
         return $this->db->count_all_results('articles');
@@ -30,7 +30,7 @@ class Admin_model extends CI_Model {
 
     public function setArticle($post, $id = 0) {
         $post['title'] = str_replace('"', "'", $post['title']);
-        if($id > 0) {
+        if ($id > 0) {
             $result = $this->db->where('id', $id)
                     ->update('articles', $post);
         } else {
@@ -45,15 +45,29 @@ class Admin_model extends CI_Model {
         return $result;
     }
 
+    public function historyCount() {
+        return $this->db->count_all_results('history');
+    }
+
+    public function setHistory($activity, $user) {
+        $this->db->insert('history', array('activity' => $activity, 'username' => $user, 'time' => time()));
+    }
+
+    public function getHistory($limit, $page) {
+        $this->db->order_by('id', 'desc');
+        $query = $this->db->select('*')->get('history', $limit, $page);
+        return $query;
+    }
+
     public function getArticles($limit, $page, $search = null, $category = null, $orderby = null) {
-        if($search !== null) {
+        if ($search !== null) {
             $search = $this->db->escape_like_str($search);
             $this->db->where("(title LIKE '%$search%' OR description LIKE '%$search%')");
         }
-        if($category !== null) {
+        if ($category !== null) {
             $this->db->where('category', $category);
         }
-        if($orderby !== null) {
+        if ($orderby !== null) {
             $this->db->order_by('id', $orderby);
         } else {
             $this->db->order_by('id', 'desc');
@@ -70,7 +84,7 @@ class Admin_model extends CI_Model {
     public function getOneArticle($id) {
         $query = $this->db->where('id', $id)
                 ->get('articles');
-        if($query->num_rows() > 0) {
+        if ($query->num_rows() > 0) {
             return $query->row_array();
         } else {
             return false;
@@ -80,10 +94,10 @@ class Admin_model extends CI_Model {
     public function setCategorie($post) {
         $id = $post['id'];
         unset($post['id']);
-        if($id == 0) {
+        if ($id == 0) {
             $result = $this->db->insert('categories', $post);
         } else {
-            if(isset($post['rename_all'])) {
+            if (isset($post['rename_all'])) {
                 $this->db->where('category', $post['rename_all']);
                 unset($post['rename_all']);
                 $this->db->update('articles', array('category' => $post['name']));

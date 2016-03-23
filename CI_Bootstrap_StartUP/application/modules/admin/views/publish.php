@@ -2,7 +2,7 @@
 <h1>Publish article</h1>
 <hr>
 <?php
-if(validation_errors()) {
+if (validation_errors()) {
     ?>
     <hr>
     <div class="alert alert-danger"><?= validation_errors() ?></div>
@@ -32,7 +32,7 @@ if(validation_errors()) {
         </script>
     </div>
     <div class="form-group">
-        <?php if(isset($_POST['thumb']) && $_POST['thumb'] != null) { ?>
+        <?php if (isset($_POST['thumb']) && $_POST['thumb'] != null) { ?>
             <p>Current image:</p>
             <img src="<?= base_url('attachments/thumbs/' . $_POST['thumb']) ?>" class="img-responsive">
         <?php } ?>
@@ -48,7 +48,7 @@ if(validation_errors()) {
         </select>
     </div>
     <button type="submit" class="btn btn-lg btn-default">Publish</button>
-    <?php if($this->uri->segment(3) !== null) { ?>
+    <?php if ($this->uri->segment(3) !== null) { ?>
         <a href="<?= base_url('admin/articles') ?>" class="btn btn-lg btn-default">Cancel</a>
     <?php } ?>
 </form>

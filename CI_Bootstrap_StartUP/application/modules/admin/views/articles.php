@@ -1,13 +1,13 @@
 <div id="articles">
     <?php
-    if($this->session->flashdata('result_delete')) {
+    if ($this->session->flashdata('result_delete')) {
         ?>
         <hr>
         <div class="alert alert-success"><?= $this->session->flashdata('result_delete') ?></div>
         <hr>
         <?php
     }
-    if($this->session->flashdata('result_publish')) {
+    if ($this->session->flashdata('result_publish')) {
         ?>
         <hr>
         <div class="alert alert-success"><?= $this->session->flashdata('result_publish') ?></div>
@@ -36,7 +36,7 @@
                 <div class="list-group list-group">
                     <h4 class="">Category</h4>
                     <?php
-                    if($categoiries->result()) {
+                    if ($categoiries->result()) {
                         foreach ($categoiries->result() as $categorie) {
                             ?>
                             <a href="<?= base_url('admin/articles?category=' . $categorie->name) ?>" class="list-group-item"><span class="badge"><?= $categorie->num ?></span> <?= $categorie->name ?></a>
@@ -69,7 +69,7 @@
             </div>
             <hr>
             <?php
-            if($articles->result()) {
+            if ($articles->result()) {
                 foreach ($articles->result() as $row) {
                     ?>
                     <div class="row article <?= $row->visibility == 1 ? '' : 'invisible-status' ?>" data-article-id="<?= $row->id ?>">
@@ -89,7 +89,6 @@
                                 </div>
                             </div>
                             <div><?= word_limiter($row->description, 70) ?></div>
-                            <p class="text-muted">Posted by <a href="#">Ellen Richey</a></p>
                             <div class = "pull-right">
                                 <a href="<?= base_url('admin/publish/' . $row->id) ?>" class="btn btn-info">Edit</a>
                                 <a href="<?= base_url('admin/articles?delete=' . $row->id) ?>" onclick="return confirm('Are you sure continue deleting?')" class = "btn btn-danger">Delete</a>

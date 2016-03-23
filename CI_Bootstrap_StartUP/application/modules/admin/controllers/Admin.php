@@ -68,7 +68,7 @@ class Admin extends MX_Controller {
         }
         if ($this->form_validation->run($this)) {
             $config['upload_path'] = './attachments/images/';
-            $config['allowed_types'] = 'gif|jpg|png|jpeg';
+            $config['allowed_types'] = 'gif|jpg|png|jpeg|JPG|PNG|JPEG';
             $this->load->library('upload', $config);
             $this->upload->initialize($config);
             if (!$this->upload->do_upload('userfile')) {

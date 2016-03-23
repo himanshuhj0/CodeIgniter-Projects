@@ -4,7 +4,7 @@
     <div class="alert alert-danger">History is stopped! Go to controller and set <b>$history</b> property to <b>TRUE</b></div>
 <?php } ?>
 <div class="table-responsive">
-    <table class="table table-condensed table-bordered table-striped">
+    <table class="table table-condensed table-bordered table-striped custab">
         <thead>
             <tr>
                 <th>User</th>

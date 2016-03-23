@@ -1,10 +1,10 @@
 <style>
     body {
-        background: -webkit-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
-        background: -moz-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
-        background: -ms-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
-        background: -o-linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
-        background: linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
+        background: -webkit-linear-gradient(90deg, #6b70ff 10%, #353889 90%);
+        background: -moz-linear-gradient(90deg, #6b70ff 10%, #353889 90%);
+        background: -ms-linear-gradient(90deg, #6b70ff 10%, #353889 90%);
+        background: -o-linear-gradient(90deg, #6b70ff 10%, #353889 90%);
+        background: linear-gradient(90deg, #6b70ff 10%, #353889 90%);
         font-family: 'Open Sans', sans-serif!important;
         padding-top:100px;
     }

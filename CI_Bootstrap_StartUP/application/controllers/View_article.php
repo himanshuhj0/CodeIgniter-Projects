@@ -6,7 +6,7 @@ class View_article extends MY_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->model('Home_model');
+        $this->load->model('Articles_model');
     }
 
     public function index($id) {
@@ -15,8 +15,8 @@ class View_article extends MY_Controller {
         $head['title'] = 'Title information‎';
         $head['description'] = 'Description info';
         $head['keywords'] = 'key,words,for,seo';
-        $data['articles'] = $this->Home_model->getOneArticle($id);
-        $this->render('home', $head, $data);
+        $data['article'] = $this->Articles_model->getOneArticle($id);
+        $this->render('view_article', $head, $data);
     }
 
 }

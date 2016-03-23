@@ -6,7 +6,7 @@ class Home extends MY_Controller {
 
     public function __construct() {
         parent::__construct();
-        $this->load->model('Home_model');
+        $this->load->model('Articles_model');
     }
 
     public function index() {
@@ -15,7 +15,7 @@ class Home extends MY_Controller {
         $head['title'] = 'Title information‎';
         $head['description'] = 'Description info';
         $head['keywords'] = 'key,words,for,seo';
-        $data['articles'] = $this->Home_model->getHomeArticles();
+        $data['articles'] = $this->Articles_model->getArticles('test1');
         $this->render('home', $head, $data);
     }
 

@@ -71,9 +71,10 @@
             <?php
             if ($articles->result()) {
                 foreach ($articles->result() as $row) {
+                    echo $row->thumb;
                     ?>
                     <div class="row article <?= $row->visibility == 1 ? '' : 'invisible-status' ?>" data-article-id="<?= $row->id ?>">
-                        <div class="col-sm-4"><a href="#" class="article-image"><img src="<?= $row->thumb != null && is_file('../attachments/thumbs/' . $row->thumb) ? base_url('attachments/thumbs/' . $row->thumb) : '../attachments/no-image.png' ?>" class="img-responsive"></a>
+                        <div class="col-sm-4"><a href="#" class="article-image"><img src="<?= $row->thumb != null && file_exists('attachments/thumbs/' . $row->thumb) ? base_url('attachments/thumbs/' . $row->thumb) : base_url('attachments/no-image.png') ?>" class="img-responsive"></a>
                         </div>
                         <div class="col-sm-8">
                             <input type="hidden" value="<?= $row->visibility == 1 ? 0 : 1 ?>" id="to-status">

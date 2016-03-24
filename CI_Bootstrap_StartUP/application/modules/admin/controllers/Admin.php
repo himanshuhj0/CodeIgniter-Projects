@@ -257,6 +257,7 @@ class Admin extends MX_Controller {
             echo 1;
         else
             echo 0;
+        $this->saveHistory('Password change for user: ' . $this->username);
     }
 
     public function articleStatusChange() { //called from ajax

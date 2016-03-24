@@ -89,6 +89,7 @@
                                 </div>
                             </div>
                             <div><?= word_limiter($row->description, 70) ?></div>
+                            <div><i class="fa fa-link"></i> <a href="<?= base_url($row->url) ?>"><?= base_url($row->url) ?></a></div>
                             <div class = "pull-right">
                                 <a href="<?= base_url('admin/publish/' . $row->id) ?>" class="btn btn-info">Edit</a>
                                 <a href="<?= base_url('admin/articles?delete=' . $row->id) ?>" onclick="return confirm('Are you sure continue deleting?')" class = "btn btn-danger">Delete</a>

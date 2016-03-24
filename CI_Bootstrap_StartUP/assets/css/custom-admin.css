@@ -21,7 +21,7 @@ nav.navbar, div.left-side, h1 {text-transform: uppercase; }
 .login-alerts {max-width: 300px; margin:0 auto;}
 
 nav.navbar {background-color:#3c8dbc; border-radius:0; box-shadow: 3px 3px 2px #ccc;}
-nav.navbar * { color:#fff;}
+nav.navbar a { color:#fff;}
 nav.navbar a.navbar-brand {background: #1e5799; background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); }
 nav.navbar li a:hover, nav.navbar li a:focus, nav.navbar li a:active {background-color: transparent;}
 .navbar-nav li a i {margin-right: 7px;}
@@ -44,10 +44,15 @@ div.left-side ul.sidebar-menu li.search form i {position: absolute; right:10px; 
 .custab{ border: 1px solid #ccc;  padding: 5px; box-shadow: 3px 3px 2px #ccc; transition: 0.5s; }
 .custab:hover{ box-shadow: 3px 3px 0px transparent; transition: 0.5s;}
 
+.relative {position:relative;}
+.settings {position: absolute; width:320px;  z-index: 1000; display: none; color:#222d32 !important;}
+.settings .panel-body a:hover, .settings .panel-body a:focus {background-color: #2989d8;}
+.settings #pass_result {display:none;}
+
 #articles div.well {margin-top:15px;}
 #articles h3.title {word-break: break-all;}
 #articles .find {margin-bottom:36px;}
-#articles a.article-image {height:300px;}
+#articles a.article-image img {height:250px;}
 #articles div.article.invisible-status {opacity:0.4;}
 #articles span.dropdown-toggle {cursor: pointer;}
 

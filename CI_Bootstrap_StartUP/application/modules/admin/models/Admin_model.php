@@ -126,4 +126,10 @@ class Admin_model extends CI_Model {
         return $result;
     }
 
+    public function changePass($new_pass, $username) {
+        $this->db->where('username', $username);
+        $result = $this->db->update('users', array('password' => md5($new_pass)));
+        return $result;
+    }
+
 }

@@ -250,7 +250,17 @@ class Admin extends MX_Controller {
         }
     }
 
+    public function changePass() {  //called from ajax
+        $this->login_check();
+        $result = $this->Admin_model->changePass($_POST['new_pass'], $this->username);
+        if ($result == true)
+            echo 1;
+        else
+            echo 0;
+    }
+
     public function articleStatusChange() { //called from ajax
+        $this->login_check();
         $result = $this->Admin_model->articleStatusChagne($_POST['id'], $_POST['to_status']);
         if ($result == true)
             echo 1;

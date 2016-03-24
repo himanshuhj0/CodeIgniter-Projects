@@ -33,7 +33,7 @@
                     </div>
                     <div class = "form-group">
                         <label for="password">Password</label>
-                        <input id="password" value="" placeholder="Password" name="password" type="text" class="form-control" />
+                        <input id="password" value="" placeholder="Password" name="password" type="password" class="form-control" />
                     </div>
                     <div class = "form-group text-center">
                         <a href="<?= base_url() ?>" class="btn btn-danger btn-cancel-action">Cancel</a>

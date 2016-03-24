@@ -37,6 +37,27 @@
                                         <li class="active"><a href="<?= base_url() ?>"><i class="fa fa-home"></i> Open site</a></li>
                                     </ul>
                                 </li>
+                                <li>
+                                    <a href="javascript:void(0);" style="margin-left:-10px;"><i class="fa fa-lg fa-cogs"></i></a>
+                                    <div class="relative">
+                                        <div class="settings">
+                                            <div class="panel panel-primary" >
+                                                <div class="panel-heading">
+                                                    <div class="panel-title">Settings</div>
+                                                </div>     
+                                                <div class="panel-body">
+                                                    <label>New Pass</label> <span class="bg-success" id="pass_result">Changed!</span>
+                                                    <form class="form-inline" role="form">
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" placeholder="New password" name="new_pass">
+                                                        </div>
+                                                        <a href="javascript:void(0);" onclick="changePass()" class="btn btn-sm btn-primary">Update</a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="<?= base_url('admin/logout') ?>"><i class="fa fa-sign-out"></i> Logout</a></li>

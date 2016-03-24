@@ -50,11 +50,14 @@ div.left-side ul.sidebar-menu li.search form i {position: absolute; right:10px; 
 .settings #pass_result {display:none;}
 
 #articles div.well {margin-top:15px;}
-#articles h3.title {word-break: break-all;}
+#articles h3.title {word-break: break-all;overflow: hidden;}
 #articles .find {margin-bottom:36px;}
 #articles a.article-image img {height:250px;}
 #articles div.article.invisible-status {opacity:0.4;}
 #articles span.dropdown-toggle {cursor: pointer;}
+#articles .url {overflow: hidden;}
+#articles .url a {word-break: break-all;}
+#articles .description-article {max-height: 140px; overflow:hidden; margin-bottom:10px;}
 
 #categories a.btn-xs {margin-bottom: 15px;}
 
@@ -64,5 +67,7 @@ footer a {color:#fff; text-decoration:underline;}
 @media screen and (max-width: 767px) {
     .left-side {position:relative !important; top:0 !important; margin-bottom: 20px;}
     nav.navbar {margin-bottom:0;}
+    nav.navbar .navbar-brand {height:55px;}
+    .settings {position: relative;}
 }
 

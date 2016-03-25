@@ -10,9 +10,12 @@ CREATE TABLE IF NOT EXISTS `articles` (
   `description` longtext NOT NULL,
   `url` varchar(255) NOT NULL,
   `category` varchar(20) NOT NULL,
+  `time` int(10) unsigned NOT NULL COMMENT 'time created',
+  `time_update` int(10) unsigned NOT NULL COMMENT 'time updated',
   `visibility` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+
 
 CREATE TABLE IF NOT EXISTS `categories` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,

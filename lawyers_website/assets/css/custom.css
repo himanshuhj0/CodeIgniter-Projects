@@ -1,0 +1,51 @@
+html, body { height: 100%;}
+body { font-family:arial; background-color:#f0f0f0;}
+
+#wrapper { min-height: 100%; position: relative;}
+#content {padding-bottom:300px;}
+
+header {background-color: #fff; padding-top: 20px;}
+header a.social {height:38px; overflow: hidden; display: inline-block;}
+header img.social:hover {margin-top: -38px;}
+header form {margin-right: 20px; margin-top:4px;}
+.search-field { background: #fff none repeat scroll 0 0; border: 1px solid #dfdfdf; color: #83868a;  display: block;  float: left; font: 12px/16px "Ubuntu",Arial,Helvetica,sans-serif;     height: 15px;   margin: 0; outline: medium none;  padding: 6px 4px 6px 10px; position: relative;   width: 162px; height: 100%;}
+header form a {background: #db0e22 none repeat scroll 0 0; color: #fff; display: block; float: left; font: 12px/29px "Ubuntu",Arial,Helvetica,sans-serif; margin-left: -1px;padding: 0 15px; position: relative;  text-transform: uppercase;}
+header form a:hover { text-decoration: none; color:#fff;}
+header nav.navbar {margin-top:20px; margin-bottom: 0; background-image: url('../img/menu_bg.png'); height: 64px; border-radius: 0; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);}
+header nav.navbar .navbar-nav li a {padding-bottom: 21px; padding-top: 23px;height: 64px; margin-top: -1px; text-transform: uppercase; color:#fff; font-weight: bold;}
+header nav.navbar .navbar-nav li a:hover {background-color:#dc0e23;}
+header nav.navbar ul.nav {margin-left: -15px;}
+header nav.navbar ul.dropdown-menu * {color:#333 !important;}
+.nav .open a:focus, .nav .open a:hover {background-color:#dc0e23;}
+
+.main-content { color: #83868a; padding-top:20px; padding-bottom: 20px;}
+.main-content h2 {color:#3c3c3c;}
+.main-content div.content {color:#3c3c3c;}
+
+#home .slider {background-color: #e7e7e7; padding-top:20px; padding-bottom:20px; border-bottom:1px solid #fff;}
+#home .slider .slide {border: 4px solid #fff; height:400px; padding-top:115px; padding-left:40px; -webkit-box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.75);-moz-box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.75);box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.75);}
+#home .slider .slide .contents {max-width:360px;}
+#home .slider .slide .contents h2 {color: #dc0e23;letter-spacing: -1px; margin:0; text-transform: uppercase; font-weight: bold;}
+#home .slider .slide .contents h3 {color:#424649; margin:0; margin-bottom: 20px;}
+#home .slider .slide .contents div.description {color:#818181;}
+#home .slider a.more{ background: #ce0815 none repeat scroll 0 0; border-radius: 5px; color: #fff; display: inline-block; font: bold 14px/15px "Archivo Narrow",Arial,sans-serif; margin-top: 26px; padding: 9px 20px; text-decoration: none;  text-transform: uppercase;}
+#home .resent {background:rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #f5f5f5, #e0e0e0) repeat scroll 0 0; padding-bottom: 20px;}
+#home .resent .left-side span {color:#3c3c3c; font-size:28px; line-height: 22px; margin-top:100px; display:inline-block;}
+#home .home-lists ul {list-style: none;}
+#home .home-lists ul li {margin-bottom:8px;}
+#home .home-lists ul li i {color:#ce0815;}
+#home .home-lists ul li a {color:#5a7792;}
+#home .resent .right-side div.resent-box h3 {    border-bottom: 1px solid #e1e1e1; color: #5a7792;  font: 14px/18px "Archivo Narrow",Arial,sans-serif;  margin-top: 32px;  padding-bottom: 16px;   text-transform: uppercase;}
+
+#legal-articles .article {margin-bottom: 30px;}
+#legal-articles .article h1 {margin:0;}
+#legal-articles .article h1 a { color: #5a7792; display: inline-block;   font: 14px/20px "Archivo Narrow",Arial,sans-serif;  margin-bottom: 0;  text-transform: uppercase;}
+#legal-articles .article .time-published span {display: block; color:#dc0e23; line-height: 22px;}
+#legal-articles .article .time-published span.day {font-size:36px;}
+#legal-articles .article .time-published span.mounth {font-size:15px;}
+#legal-articles .article .time-published span.year {font-size:15px;}
+#legal-articles .article .info {padding-left: 20px;}
+
+a.more-gradient {border: 1px solid #d8d6d6;  border-radius: 20px; box-shadow: 1px 1px 1px rgba(178, 178, 178, 1); color: #3c3c3c;  display: inline-block;  font: 14px/20px "Ubuntu",Arial,Helvetica,sans-serif; margin-top: 24px;  padding: 10px 32px 11px; text-align: center;  text-decoration: none; background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #f5f5f5, #e0e0e0) repeat scroll 0 0;}
+
+footer {background-image: url('../img/footer-bg.png'); height: 300px; color:#fff; border-top:8px solid #aeaeae; border-bottom:20px solid #83868a;  bottom: 0; position: absolute; left:0; width: 100%;}

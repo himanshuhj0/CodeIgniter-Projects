@@ -1,6 +1,1 @@
-# simple-blog-with-administration
-Used technologies:
-- Codeigniter 2.2.1
-- HMVC
-- Bootstrap v3.3.2
-- jQuery
+![alt tag](https://raw.githubusercontent.com/kirilkirkov/CodeIgniter-Projects/master/lawyers_website/law-screen.png)

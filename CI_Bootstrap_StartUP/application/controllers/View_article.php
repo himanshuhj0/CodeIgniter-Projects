@@ -16,6 +16,9 @@ class View_article extends MY_Controller {
         $head['description'] = 'Description info';
         $head['keywords'] = 'key,words,for,seo';
         $data['article'] = $this->Articles_model->getOneArticle($id);
+        if($data['article'] === null) {
+            show_404();
+        }
         $this->render('view_article', $head, $data);
     }
 

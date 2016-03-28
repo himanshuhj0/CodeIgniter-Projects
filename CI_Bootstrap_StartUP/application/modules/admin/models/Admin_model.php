@@ -31,7 +31,7 @@ class Admin_model extends CI_Model {
     public function setArticle($post, $id = 0) {
         $post['title'] = str_replace('"', "'", $post['title']);
         if ($id > 0) {
-            $post['time_updated'] = time();
+            $post['time_update'] = time();
             $result = $this->db->where('id', $id)
                     ->update('articles', $post);
         } else {

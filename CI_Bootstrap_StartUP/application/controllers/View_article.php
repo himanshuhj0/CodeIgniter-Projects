@@ -13,7 +13,9 @@ class View_article extends MY_Controller {
         $data = array();
         $head = array();
         $head['title'] = 'Title information‎';
-        $head['description'] = 'Description info';
+        $description = url_title(character_limiter(strip_tags($data['article']['description']), 130));
+        $description = str_replace("-", " ", $description).'..';
+        $head['description'] = $description;
         $head['keywords'] = 'key,words,for,seo';
         $data['article'] = $this->Articles_model->getOneArticle($id);
         if($data['article'] === null) {

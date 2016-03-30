@@ -54,5 +54,6 @@ $route['default_controller'] = 'home';
 //$route[rawurlencode('контакти')] = "contacts";
 //$route['(.*-.*)'] = "view_article/index/$1";
 $route['(:any)_(:num)'] = "view_article/index/$2";
+$route[rawurlencode('новини').'/(:num)'] = "news/index/$1";
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

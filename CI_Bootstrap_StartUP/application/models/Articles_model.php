@@ -23,7 +23,10 @@ class Articles_model extends CI_Model {
     }
 
     public function getOneArticle($id) {
-        $this->db->where('id', $id);
+                if (is_numeric($where))
+            $this->db->where('id', $where);
+        else
+            $this->db->where('category', $where);
         $this->db->where('visibility', 1);
         $query = $this->db->get('articles');
         return $query->row_array();

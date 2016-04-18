@@ -12,7 +12,7 @@ class Articles_model extends CI_Model {
     	return $this->db->count_all_results('articles');
     }
 
-    public function getArticles($category, $limit = null, $start = null) {) {
+    public function getArticles($category, $limit = null, $start = null) {
         if($limit !== null && $start !== null) {
     		$this->db->limit($limit, $start);
     	}
